@@ -1,0 +1,20 @@
+Cpp logika – backend
+Qt GUI – frontend
+Design pattern – Observer
+
+-	Simulacia 
+	o	Pracujeme s diskretnym casom
+	o	Spojity 2D priestor
+	o	Zdanlivo plynula (dostatocne male kroky vzhladom k rychlosti pohybu robotov)
+	o	Ovladanie pohybu vybraneho robota
+	o	Pauznutie a spustenie
+
+-	Map editor
+	o	Velkost mapy (fixna / nastavitelna)
+	o	Ukladanie stein
+	o	Ukladanie robotov a ich orientacie (R – pre zmenu rotacie (predpokladam zmenu o 90 stupnov ale to asi neprejde))
+
+-	Screeny
+	o	Menu (start – spusti default mapu, load map, nahra mapu na prehranie, edit map, new map) 
+	o	Map editor
+	o	Simulacia
