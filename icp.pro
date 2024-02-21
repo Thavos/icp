@@ -19,4 +19,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # Input
-SOURCES += main.cpp
+SOURCES +=  main.cpp\
+            gui/main_window.cpp\
+            gui/simulation_dialog.cpp\
+            gui/editor_dialog.cpp
+
+HEADERS +=  gui/main_window.h\
+            gui/simulation_dialog.h\
+            gui/editor_dialog.h

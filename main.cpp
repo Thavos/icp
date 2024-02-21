@@ -1,3 +1,4 @@
+#include "gui/main_window.h"
 #include <QApplication>
 #include <QLabel>
 #include <QWidget>
@@ -32,22 +33,7 @@ private:
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-
-    QWidget mainWidget;
-    mainWidget.setWindowTitle("Animated Square");
-    mainWidget.resize(400, 400);
-
-    QLabel hello("<center>Welcome to my first Qt program</center>", &mainWidget);
-    hello.setAlignment(Qt::AlignCenter);
-    hello.resize(400, 100);
-
-    SquareWidget square(&mainWidget);
-    square.setGeometry(0, 100, 100, 100);
-
-    QLabel number("1", &square);
-    number.setAlignment(Qt::AlignCenter);
-    number.resize(100, 100);
-
-    mainWidget.show();
+    MainWindow mainWindow;
+    mainWindow.show();
     return app.exec();
 }
