@@ -1,0 +1,19 @@
+#include "MainWindow.h"
+
+// xhruzs00
+
+/**
+ * @brief Constructs a new MainWindow object.
+ * @param parent The parent widget, default is nullptr.
+ */
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent) {
+}
+
+/**
+ * @brief Destroys the MainWindow object.
+ */
+MainWindow::~MainWindow() {
+    delete simController;  // Clean up the simulation controller
+}
+

@@ -1,0 +1,36 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QPushButton>
+#include "./src/controller/SimulationController.h"
+#include "./src/view/MapView.h"
+
+// xhruzs00
+
+/**
+ * @brief The MainWindow class provides the main application window.
+ *
+ * This class is responsible for setting up the user interface and connecting
+ * user actions with the underlying simulation controller.
+ */
+class MainWindow : public QMainWindow {
+    Q_OBJECT
+
+public:
+    /**
+     * @brief Constructor for MainWindow.
+     * @param parent The parent widget, default is nullptr.
+     */
+    explicit MainWindow(QWidget *parent = nullptr);
+
+    /**
+     * @brief Destructor for MainWindow.
+     */
+    ~MainWindow();
+
+private:
+    SimulationController* simController;  // Pointer to the simulation controller
+};
+
+#endif
